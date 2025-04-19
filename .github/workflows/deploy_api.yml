@@ -36,7 +36,7 @@ jobs:
         pip install -r requirements.txt  
 
     - name: 'Deploy to Azure Web App'
-      uses: azure/webapps-deploy@v3
+      uses: azure/webapps-deploy@v4
       with:
         app-name: 'fastapi-cityscape-unet'
         slot-name: 'Production'
