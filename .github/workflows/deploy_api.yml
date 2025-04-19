@@ -9,6 +9,7 @@ on:
       - 'models/**'
       - 'requirements.txt'
       - '.github/workflows/deploy-fastapi.yml'
+  workflow_dispatch:
 
 jobs:
   build-and-deploy:
