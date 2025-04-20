@@ -1,3 +1,4 @@
+import uvicorn
 from fastapi import FastAPI, UploadFile, File
 from fastapi.responses import Response
 from models.unet import load_model, predict_mask
@@ -26,5 +27,4 @@ async def predict(image: UploadFile = File(...)):
 
 
 if __name__ == "__main__":
-    import uvicorn
-    uvicorn.run("app.main:app", host="127.0.0.1", port=8000)
+    uvicorn.run("appp.main:appp", host="127.0.0.1", port=8000)

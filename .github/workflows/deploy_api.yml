@@ -9,8 +9,6 @@ on:
       - 'models/**'
       - 'requirements.txt'
       - '.github/workflows/deploy_api.yml'
-  workflow_dispatch:
-
 
 jobs:
   build:
@@ -41,7 +39,7 @@ jobs:
       - name: Upload artifact for deployment jobs
         uses: actions/upload-artifact@v4
         with:
-          name: python-app
+          name: python-appp
           path: |
             release.zip
             !venv/
@@ -63,10 +61,7 @@ jobs:
 
       - name: Unzip artifact for deployment
         run: |
-          unzip release.zip
-          pip install -r requirements.txt
-        
-        
+          unzip release.zip        
 
       - name: Login to Azure
         uses: azure/login@v2
