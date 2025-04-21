@@ -74,5 +74,5 @@ jobs:
       - name: 'Deploy to Azure Web App'
         uses: azure/webapps-deploy@v3
         with:
-          app-name: 'fastapi-cityscape-unet'
+          app-name: 'azure-service-de-merde'
           slot-name: 'Production'
