@@ -1,12 +1,9 @@
 fastapi
 gunicorn
 uvicorn
-tensorflow
+tensorflow-cpu
 numpy
 Pillow
 python-multipart
 streamlit
 requests
-azure-core==1.29.4
-azure-identity==1.16.1
-opencensus-ext-azure==1.1.9
