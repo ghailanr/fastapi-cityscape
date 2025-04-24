@@ -26,5 +26,10 @@ async def predict(image: UploadFile = File(...)):
     return Response(content=result_img_bytes, media_type="image/png")
 
 
+@app.get("/health")
+async def health_check():
+    return {"status": "ok"}
+
+
 if __name__ == "__main__":
     uvicorn.run("app.main:app", host="127.0.0.1", port=8000)
