@@ -72,5 +72,5 @@ jobs:
         uses: azure/webapps-deploy@v3
         id: deploy-to-webapp
         with:
-          app-name: 'srtreamlit-api-unet'
+          app-name: 'streamlit-api-unet'
           slot-name: 'Production'
