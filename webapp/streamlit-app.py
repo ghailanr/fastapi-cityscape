@@ -5,7 +5,7 @@ from PIL import Image
 import numpy as np
 
 # Configuration
-API_URL = "https://fastapi-cityscape-unet.azurewebsites.net/predict"
+API_URL = "https://fastapi-cityscape-unet.azurewebsites.net/predict/"
 IMAGE_FOLDER = "webapp/data/images"  # Replace with your actual image folder path
 MASK_FOLDER = "webapp/data/masks"  # Replace with your actual mask folder path
 
